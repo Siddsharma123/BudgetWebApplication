@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/budget.js" type="text/javascript"></script>
+    <title>Budget App</title>
+</head>
+<body>
+     <div class="container">
+            <!-- 
+                 <div id="bkg-img"> <img src="https://image.freepik.com/free-vector/spot-light-background_1284-4685.jpg" alt="bck-image"></div>
+             -->
+             <div id="animation">
+             <img src="https://image.shutterstock.com/image-vector/budget-word-concepts-banner-funding-260nw-1221845029.jpg" alt="">
+            </div>
+        
+         <div class="budget-heading">
+             Budget App 
+         </div>
+         <!-- 
+             budget-calculator
+             budget-showcase
+             expence-amount
+             expence-showcase
+             label-text
+             input-amount
+             submit-button
+             expence-showcase
+          -->
+         <div class="top">
+             <div class="budget-calculator">
+                    <label for="bud-amount">Please Enter Your Budget</label><br>
+                    <input type="text" class="input-amount" id="input-bud-amount" placeholder="Enter Your Budget" autofocus><br>
+                    <button class="submit-button" onclick="budFormValidation()" id="input-bud-submit">Calculate</button>
+             </div>
+             <div class="budget-showcase">
+                 <div>
+                      <h3>BUDGET</h3>
+                      <img src="images/budget-1.png" alt="budget-icon">
+                       <h4 style="color:blue;font-size:20px;"><span>$ </span><span id="buDget-Amt">0</span></h4>
+                 </div>
+                 <div>
+                    <h3>EXPENSES</h3>
+                    <img src="images/exp-1.png" alt="budget-icon">
+                    <h4 style="color:red;font-size:20px;"><span>$ </span><span id="exPense-Amt">0</span></h4>
+                 </div>
+                 <div>
+                    <h3>BALANCE</h3>
+                    <img src="images/balance-1.png" alt="budget-icon">
+                    <h4 style="color:green;font-size:20px;"><span>$ </span><span id="baLance-Amt">0</span></h4>
+                 </div>
+             </div>
+         </div>
+         <div class="bottom">
+            <div class="expence-amount">
+                    <label for="input-exp-title">Please Enter Your Expense</label><br>
+                    <input type="text" list="exp-list-title" class="input-amount" id="input-exp-title" placeholder="Enter Your Expense"><br>
+                    <datalist id="exp-list-title">
+                        <option value="rent">
+                        <option value="bike">
+                        <option value="books">
+                        <option value="shopping">
+                        <option value="car">
+                      </datalist>
+                    <label for="input-exp-amount">Please Enter Expense Amount</label><br>
+                    <input type="text" class="input-amount" placeholder="Enter Your Expense Amount" id="input-exp-amount"><br>
+                    <button onclick="expFormValidation()"  class="submit-button" id="input-exp-submit">Add Expense</button>
+            </div>
+            <div class="expence-showcase">
+                <div ><p>Expense Title</p>
+                <p id="exp-show-title"></p></div>
+                <div ><p>Expense Value</p>
+                <p id="exp-show-value" ></p></div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
