@@ -35,7 +35,7 @@ function calculate(x){
  var oldBud=document.getElementById("buDget-Amt");
  var oldExp=document.getElementById("exPense-Amt");
  var oldBal=document.getElementById("baLance-Amt");
- var newBud=newBud=parseInt(oldBud.innerHTML)+num;
+ var newBud=parseInt(oldBud.innerHTML)+num;
  var newExp=parseInt(oldExp.innerHTML);
  var newBal=parseInt(oldBal.innerHTML)+num;
  putValues(newBud,newExp,newBal);
